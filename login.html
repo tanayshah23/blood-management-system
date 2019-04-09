@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            table,td{
+                border: solid 2px;
+                text-align: center;
+            }
+            input{
+                width: 300px;
+                height: 40px;
+            }
+            button{
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background-color: darkred;
+                color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body bgcolor="#ffbe76"><br><br><br><br><br><br>
+        <center>
+        <form method="POST" action="checklogin.php">
+            <table><tr><td width=100px>
+            Username:</td><td><input type="text" name="uname" placeholder="Enter username"></td></tr><tr><td>
+            Password: </td><td><input type="password" name="pass"></td></tr></table><br>
+            <button>Login</button><br>
+        </form>
+        --OR--<br><br>
+        <form method="POST" action="signup.html">
+            <button>Sign Up</button>
+        </form>
+        </center>
+    </body>
+</html>

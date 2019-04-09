@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+        table{
+            border: none;
+        }
+        td{
+            border: solid 2px;
+            width: 50px;
+        }
+        select{
+            width: 200px;
+            height: 40px;
+        }
+        button{
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background-color: darkred;
+                color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body bgcolor="#ffbe76">
+        <center><br>
+        <h1>Please select the blood type:</h1><p>
+        <form method="GET" action="search.php">
+            <table border=1px><tr>
+            <td>O+ :</td><td><input type="radio" name="bg" value="o+" checked></td></tr><tr>
+            <td>O- :</td><td><input type="radio" name="bg" value="o-"></td></tr><tr>
+            <td>A+ :</td><td><input type="radio" name="bg" value="a+"></td></tr><tr>
+            <td>A- :</td><td><input type="radio" name="bg" value="a-"></td></tr><tr>
+            <td>B+ :</td><td><input type="radio" name="bg" value="b+"></td></tr><tr>
+            <td>B- :</td><td><input type="radio" name="bg" value="b-"></td></tr><tr>
+            <td>AB+ :</td><td><input type="radio" name="bg" value="ab+"></td></tr><tr>
+            <td>AB- :</td><td><input type="radio" name="bg" value="ab-"></td></tr></table><br>
+
+            <select name="location">
+                <option value="delhi">Delhi</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="chennai">Chennai</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="bangalore">Bangalore</option>
+            </select><br><br>
+            <button>Search</button>
+        </form>
+        </center>
+    </body>
+</html>

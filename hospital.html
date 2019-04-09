@@ -1,0 +1,128 @@
+<html>
+    <head>
+            <style>
+                    button{
+                        width: 150px;
+                        height: 50px;
+                        font-size: 20px;
+                        background-color: darkred;
+                        color: antiquewhite;
+                    }
+                    select{
+                        width: 200px;
+                        height: 40px;
+                    }
+                </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script language="javascript" type="text/javascript">
+    function dynamicdropdown(listindex)
+    {
+        switch (listindex)
+        {
+        case "Mumbai" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option("Kohinoor Hopital","Kohinoor Hospital");
+            document.getElementById("Hospital").options[2]=new Option("Bombay Hospital","Bombay Hospital");
+	        document.getElementById("Hospital").options[3]=new Option("MPCT Hospital","MPCT Hospital");
+            document.getElementById("Hospital").options[4]=new Option("Nanavati Super Speciality Hospital","Nanavati Super Speciality Hospital");
+            document.getElementById("Hospital").options[5]=new Option("SL Raheja Hospital","SL Raheja Hospital");
+            document.getElementById("Hospital").options[6]=new Option("Apollo Hospital","Apollo Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Wadia Hospital","Wadia Hospital");
+            document.getElementById("Hospital").options[8]=new Option("SevenHills Hospital","SevenHills Hospital");		
+            break;
+        case "Delhi" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option("Fortis Escorts Hopital","Fortis Escorts Hospital");
+            document.getElementById("Hospital").options[2]=new Option("Manipal Hospital","Manipal Hospital");
+	        document.getElementById("Hospital").options[3]=new Option("Batra Hospital & Medical Research Centre","Batra Hospital & Medical Research Centre");
+            document.getElementById("Hospital").options[4]=new Option("Rockland Hospital","Rockland Hospital");
+            document.getElementById("Hospital").options[5]=new Option("St Stephens Hospital","St Stephens Hospital");
+            document.getElementById("Hospital").options[6]=new Option("Apollo BSR Hospital","Apollo BSR Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Sri Balaji Action Medical Institute","Sri Balaji Action Medical Institute");
+            document.getElementById("Hospital").options[8]=new Option("Orchid Hospital","Orchid Hospital");		
+            break;
+        case "Kolkata" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option(" Charnok Hopital","Charnok Hospital");
+            document.getElementById("Hospital").options[2]=new Option("Nigtingale Hospital"," Nigtingale Hospital");
+	        document.getElementById("Hospital").options[3]=new Option("Phoenix Hospital Diagnostic Centre PVT. LTD","Phoenix Hospital Diagnostic Centre PVT. LTD.");
+            document.getElementById("Hospital").options[4]=new Option("Kothari Medical Center","Kothari Medical Center");
+            document.getElementById("Hospital").options[5]=new Option("SL Raheja Hospital","SL Raheja Hospital");
+            document.getElementById("Hospital").options[6]=new Option("ILS Hospital","ILS Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Narayana Multispeciality Hospital","Narayana Multispeciality Hospital");
+            document.getElementById("Hospital").options[8]=new Option("IRIS Hospital","IRIS Hospital");	
+            break;
+        case "Chennai" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option("Prashancth Hopital","Prashancth Hospital");
+            document.getElementById("Hospital").options[2]=new Option("PRFC Hospital","PRFC Hospital");
+	        document.getElementById("Hospital").options[3]=new Option("MPCT Hospital","MPCT Hospital");
+            document.getElementById("Hospital").options[4]=new Option("Chennai <Meenakshi Super Speciality Hospital","Chennai Meenakshi Super Speciality Hospital");
+            document.getElementById("Hospital").options[5]=new Option("Hindu Mission Hospital","Hindu Mission Hospital");
+            document.getElementById("Hospital").options[6]=new Option("Apollo Hospital","Apollo Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Dr. Kamakshi Memorial Hospital","Dr. Kamakshi Memorial Hospital");
+            document.getElementById("Hospital").options[8]=new Option("City Hospital","City Hospital");	
+            break;
+        case "Hyderabad" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option("Hedge Hopital","Hedge Hospital");
+            document.getElementById("Hospital").options[2]=new Option("Maxcure Hospital","Maxcure Hospital");
+	        document.getElementById("Hospital").options[3]=new Option("Rainbow Children's Hospital","Rainbow Children's Hospital");
+            document.getElementById("Hospital").options[4]=new Option("Hyderabad Super Speciality Hospital","Hyderabad Super Speciality Hospital");
+            document.getElementById("Hospital").options[5]=new Option("Saya Skin Clinic","Saya Skin Clinic");
+            document.getElementById("Hospital").options[6]=new Option("Star Hospital","Star Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Yashoda Hospital","Yashoda Hospital");
+            document.getElementById("Hospital").options[8]=new Option("The Deccan Hospital","The Deccan Hospital");
+            break;
+        case "Bengaluru" :
+            document.getElementById("Hospital").options[0]=new Option("Select Hospital","");
+            document.getElementById("Hospital").options[1]=new Option("laFemme Healthcare","laFemme Healthcare");
+            document.getElementById("Hospital").options[2]=new Option("Hosmat Hospital","HosmatHospital");
+	        document.getElementById("Hospital").options[3]=new Option("Apollo Hospital","Apollo Hospital");
+            document.getElementById("Hospital").options[4]=new Option("IIBR Super Speciality Hospital","IIBR Super Speciality Hospital");
+            document.getElementById("Hospital").options[5]=new Option("Columbia Hospital","Columbia Hospital");
+            document.getElementById("Hospital").options[6]=new Option("Ramaiah Hospital","Ramaiah Hospital");
+            document.getElementById("Hospital").options[7]=new Option("Aveksha Hospital","Aveksha Hospital");
+            document.getElementById("Hospital").options[8]=new Option("Vikram Hospital","Vikram Hospital");	
+            break;					
+        }
+        return true;
+    }
+    </script>
+    </head>
+    <body bgcolor="#ffbe76"><br><br><br><br><center>
+    <form method="GET" action="reghospital.php">
+    <div class="category_div" id="category_div">
+        <table><tr><td>City:</td><td>
+        <select id="City" name="City" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+        <option value="">Select City</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bengaluru">Bengaluru</option>
+        </select></td></tr><tr><td>
+    </div>
+    <div class="sub_category_div" id="sub_category_div">
+        Hospital:</td><td>
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="Hospital" id="Hospital"><option value="">Select Hospital</option></select>')
+        </script>
+        </td></tr><tr><td>
+    </div>
+    <div>Date:</td><td><input type="date" name="date"></td></tr><tr><td>
+        Time: </td><td>
+        <select name="time">
+            <option value="10:00 - 11:00">10:00 - 11:00</option>
+            <option value="11:00 - 12:00">11:00 - 12:00</option>
+            <option value="12:00 - 13:00">12:00 - 13:00</option>
+            <option value="14:00 - 15:00">14:00 - 15:00</option>
+            <option value="15:00 - 16:00">15:00 - 16:00</option>
+        </select>
+    </div></td></tr></table>
+    <br><br><button>Register</button>
+    </form>
+    </center>
+    </body>
+</html>

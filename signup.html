@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            table,td{
+                border: solid 2px;
+                text-align: center;
+                height: 50px;
+            }
+            input{
+                height: 30px;
+            }
+        button{
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+                background-color: darkred;
+                color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body bgcolor="#ffbe76"><center>
+        <form method="POST" action="signup.php">
+            <table>
+                <tr><td>Username:</td><td><input type="text" name="uname"></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+                <tr><td>Name: </td><td><input type="text" name="name"></td></tr>
+                <tr><td>Date of birth:</td><td><input type="date" name="dob"></td></tr>
+                <tr><td>City:</td><td><select name="city">
+                        <option value="delhi">Delhi</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="bangalore">Bangalore</option>
+                    </select></td></tr>
+                <tr><td>Blood Group:</td><td><select name="bgroup">
+                        <option value="o+">O+</option>
+                        <option value="o-">O-</option>
+                        <option value="a+">A+</option>
+                        <option value="a-">A-</option>
+                        <option value="b+">B+</option>
+                        <option value="b-">B-</option>
+                        <option value="ab+">AB+</option>
+                        <option value="ab-">AB-</option>
+                    </select></td></tr>
+                <tr><td>Phone Number:</td><td><input type="text" name="ph"></td></tr>
+                <tr><td>E-Mail Address:</td><td><input type="email" name="email"></td></tr>
+            </table><br>
+            <button>Sign Up</button>
+        </form>
+        </center>
+    </body>
+</html>
